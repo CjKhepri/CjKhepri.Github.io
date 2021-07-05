@@ -1,28 +1,245 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <title>Cj Khepri</title>
+  <style>
+    header {
+      background: url(pics/reef_1.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    section {
+      padding-top: 4vh;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator {
+      background-color: blueviolet;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="" class="brand-logo">CJ Khepri</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class = "tooltipped btn-floating btn-small indigo darken-3" data-tooltip = "Facebook">
+            <i class="fab fa-facebook"></i>  
+          </a></li>
+          <li><a href="#" class = "tooltipped btn-floating btn-small blue-grey darken-4" data-tooltip = "Github">
+            <i class="fab fa-github"></i>  
+          </a></li>
+          <li><a href="#" class = "tooltipped btn-floating btn-small grey lighten-3" data-tooltip = "Linked In">
+            <i class="fab fa-linkedin indigo-text"></i>  
+          </a></li>
+        </ul>
+        <ul class="sidenav blue lighten-2" id="mobile-menu">
+          <li><a href="#"></a>Projects</li>
+          <li><a href="#"></a>Services</li>
+          <li><a href="#"></a>Contact</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <body>
-      <header class="container purple pink-text">Welcome to my page!</header>
-      <main>
-        <div class="container">
-            <div class="parallax">
-              <h5 class="teal darken-3 yellow-text text-darken-2">This is where I would put text</h5>
-            </div>
-        </div>
-      </main>
-      <footer>
+  <!-- photo / grid -->
+  <section class="container scrollspy" id="projects">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="pics/code.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="purple-text text-darken-4">Web Development</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum perspiciatis optio ipsam quo rem nobis dolore fuga distinctio totam minus, nulla laudantium provident, quasi quaerat neque doloremque nemo laboriosam maxime!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="pics/clownfish.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="purple-text text-darken-4">Saltwater Aquarium Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum perspiciatis optio ipsam quo rem nobis dolore fuga distinctio totam minus, nulla laudantium provident, quasi quaerat neque doloremque nemo laboriosam maxime!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="pics/reef_3.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="purple-text text-darken-4">Graphic Design</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum perspiciatis optio ipsam quo rem nobis dolore fuga distinctio totam minus, nulla laudantium provident, quasi quaerat neque doloremque nemo laboriosam maxime!</p>
+      </div>
+    </div>
+  </section>
+  <!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="pics/reef_4.jpg" alt="" class="responsive-img">
+  </div>
+</div>
+  <!-- services / tabs -->
+ <section class="container section scrollspy" id="services">
+   <div class="row">
+     <div class="col s12 l4">
+       <h2 class="purple-text text-darken-4">Services I offer...</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae corrupti pariatur assumenda magnam ullam distinctio</p> 
+       <p>doloremque ipsum obcaecati similique itaque, vel provident consequatur aliquid sit. Tempore facilis consectetur repellat!</p>
+     </div>
+     <div class="col s12 l6 offset-l2">
+       <ul class="tabs">
+         <li class="tab col s4">
+           <a href="#web-development" class="purple-text text-darken-4">Web Developer</a>
+         </li>
+         <li class="tab col s4">
+          <a href="#aquariums" class="purple-text text-darken-4">Reef Aquariums</a>
+        </li>
+         <li class="tab col s4">
+          <a href="#graphic-design" class="purple-text text-darken-4">Graphic Design</a>
+        </li>
+       </ul>
+       <div class="col s12" id="web-development">
+         <p class="flow-text purple-text text-darken-4">WEB DEVELOPMENT</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae corrupti pariatur assumenda magnam ullam distinctio</p> 
+         <p>doloremque ipsum obcaecati similique itaque, vel provident consequatur aliquid sit. Tempore facilis consectetur repellat!</p>
+       </div>
+       <div class="col s12" id="aquariums">
+         <p class="flow-text purple-text text-darken-4">CUSTOM SALTWATER AQUARIUM BUILDS & MAINTENENCE</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae corrupti pariatur assumenda magnam ullam distinctio</p> 
+         <p>doloremque ipsum obcaecati similique itaque, vel provident consequatur aliquid sit. Tempore facilis consectetur repellat!</p>
+       </div>
+       <div class="col s12" id="graphic-design">
+         <p class="flow-text purple-text text-darken-4">GRAPHIC DESIGN</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quae corrupti pariatur assumenda magnam ullam distinctio</p> 
+         <p>doloremque ipsum obcaecati similique itaque, vel provident consequatur aliquid sit. Tempore facilis consectetur repellat!</p>
+       </div>
+     </div>
+   </div>
+ </section>
 
-      </footer>
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="pics/reef_2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="purple-text text-darken-4">Get in Touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita provident tempora accusamus harum quisquam. </p>
+        <p>Auscipit atque laborum dolore quis itaque dolorem fugit consequatur sit magni fuga sequi vitae debitis ratione?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae reprehenderit dolor alias? Voluptas nam minima eligendi tempora earum veritatis, autem consectetur.</p> 
+        <p>Sint iste asperiores dolorem assumenda architecto ut quos!</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class = "materialize-textarea"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id = "date" class = "datepicker">
+            <label for="date">When do you need me?</label>
+          </div>
+          <div class="input-field">
+            <p>Services needed...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Web Development</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Saltwater Aquarium Services</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Graphic Design</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+    </div>
+  </section>
+  <!-- footer -->
+<footer class="page-footer blue lighten-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <h5>About me</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nam, porro magnam totam qui minus temporibus libero, dolorem quam rerum fugiat ipsa repellat recusandae enim explicabo possimus alias ea fugit.</p>
+      
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Get Connected</h5>
+        <ul>
+          <li><a href="#" class="white-text">Facebook</a></li>
+          <li><a href="#" class="white-text">Linked In</a></li>
+          <li><a href="#" class="white-text">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright blue lighten-3">
+    <div class="container center-align">&copy; 2021 Khepri Studios.</div>  
+  </div>
+
+</footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
